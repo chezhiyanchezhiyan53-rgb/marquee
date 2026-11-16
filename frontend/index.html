@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MARQUEE — Your Movies. Your Seats. Your Experience.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container inner">
+      <a href="/" class="brand">MAR<span>QUEE</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="/" class="active">Home</a>
+        <a href="#now-showing">Now Showing</a>
+        <a href="#coming-soon">Coming Soon</a>
+        <span data-auth-slot></span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Featured · Demo Catalogue</div>
+      <h1 id="heroTitle">MARQUEE</h1>
+      <p id="heroDesc">Your Movies. Your Seats. Your Experience.</p>
+      <div class="hero-meta" id="heroMeta"></div>
+      <a class="btn btn-primary" id="heroCta" href="#now-showing">Browse Movies</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="toolbar">
+      <div class="search-wrap">
+        <input class="input" id="searchInput" type="search" placeholder="Search movies by title..." />
+      </div>
+      <div class="genre-pills" id="genrePills"></div>
+    </div>
+
+    <section class="section" id="now-showing">
+      <div class="section-header">
+        <div>
+          <h2>Now Showing</h2>
+          <p class="muted demo-note">Demonstration movie data for this DBMS mini-project.</p>
+        </div>
+      </div>
+      <div class="movie-grid" id="nowShowingGrid">
+        <div class="loading"><div class="spinner"></div><p>Loading movies...</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="coming-soon">
+      <div class="section-header">
+        <div>
+          <h2>Coming Soon</h2>
+        </div>
+      </div>
+      <div class="movie-grid" id="comingSoonGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container inner">
+      <div>
+        <div class="brand">MAR<span>QUEE</span></div>
+        <p class="tagline">Your Movies. Your Seats. Your Experience.</p>
+        <p class="demo-note">Showtimes and availability are simulated demo data — not live cinema feeds.</p>
+      </div>
+      <div>
+        <p>DBMS Mini-Project · MongoDB · Express · Node.js</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>

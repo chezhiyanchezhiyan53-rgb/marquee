@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Seats — MARQUEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container inner">
+      <a href="/" class="brand">MAR<span>QUEE</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <span data-auth-slot></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="seatsRoot">
+    <div class="loading"><div class="spinner"></div><p>Loading seat map...</p></div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/seats.js"></script>
+</body>
+</html>

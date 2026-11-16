@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bookings — MARQUEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container inner">
+      <a href="/" class="brand">MAR<span>QUEE</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/bookings" class="active">My Bookings</a>
+        <span data-auth-slot></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="section-header">
+      <div>
+        <h1>My Bookings</h1>
+        <p class="muted">Your booking history from MongoDB</p>
+      </div>
+      <button class="btn btn-secondary btn-sm" id="refreshBtn">Refresh</button>
+    </div>
+    <div id="bookingsRoot">
+      <div class="loading"><div class="spinner"></div><p>Loading bookings...</p></div>
+    </div>
+  </main>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/bookings.js"></script>
+</body>
+</html>

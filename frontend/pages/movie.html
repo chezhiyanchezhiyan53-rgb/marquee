@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Details — MARQUEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container inner">
+      <a href="/" class="brand">MAR<span>QUEE</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/bookings">My Bookings</a>
+        <span data-auth-slot></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="movieRoot">
+    <div class="loading"><div class="spinner"></div><p>Loading movie...</p></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container inner">
+      <div class="brand">MAR<span>QUEE</span></div>
+      <p class="demo-note">Demonstration showtimes — not live cinema data.</p>
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/movie.js"></script>
+</body>
+</html>
